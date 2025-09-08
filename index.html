@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>jquery exercise 1</title>
+        <title>jquery exercise 2</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="jqueryscript.js"></script>
         <script src="jqueryscript2.js"></script>
+        <script src="jqueryscript.js"></script>
         <script src="jsscript.js"></script>
     </head>
     <body>
@@ -16,14 +16,14 @@
          *         wrapper container        *
          ************************************ -->
          
-        <div id="wrapper" class="wrapper-container">
+        <div id="wrapper" class="wrapper-container change-border change-text">
 
         <!-- ********************************
          *        resume section            *
          ************************************ -->
 
             <!-- header content -->
-            <div id="mypage-header" class="mypage-header-container">
+            <div id="mypage-header" class="mypage-header-container change-bg change-border">
                 <header>
                     <h1 id="resume-header">Samprit Gouda</h1>
                 </header>
@@ -34,24 +34,27 @@
              *       middle main content        *
              ************************************ -->
        
-            <div class="middle-content">
+            <div class="middle-content change-bg">
 
                  <!-- ********************************
                   *          left nav content        *
                   ************************************ -->
 
                 <div id="mypage-leftnav">
-                    <aside class="side-content">
+                    <aside class="side-content change-border">
                         <div class="sidebar-header"><h3>Objective</h3></div>
                     </aside>
-                    <aside class="side-content">
+                    <aside class="side-content change-border">
                         <div class="sidebar-header"><h3>Education</h3></div>
                     </aside>
-                    <aside class="side-content">
+                    <aside class="side-content change-border">
                         <div class="sidebar-header"><h3>Skills</h3></div>
                     </aside>
-                    <aside class="side-content" id="project-aside">
+                    <aside class="side-content change-border" id="project-aside">
                         <div class="sidebar-header"><h3>Projects</h3></div>
+                    </aside>
+                    <aside class="side-content change-border" id="reference-header">
+                        <div class="sidebar-header"><h3>References</h3></div>
                     </aside>
                 </div>
 
@@ -173,6 +176,17 @@
                                 </li>
                             </ul> 
                         </div>
+
+                        <!-- Reference content -->
+                        <div class="hidden">
+                            <h3 class="center-content-heading">Objective</h3>
+                        </div>
+                        <div class="content" id="Reference-section">
+                            <p class="description">	
+                                Seashore Enterprises187 Clive Road, House Springs, Missouri 63940(636) 423-2759
+                                Ryan was my direct manager from March 2018 until March 2020
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +195,7 @@
             <!-- *************************************
             *                Foter Section           *
             ****************************************** -->
-            <div id="mypage-footer" class="mypage-footer-container">
+             <div id="mypage-footer" class="mypage-footer-container">
                 <footer class="mypage-footer-content">
                     <div id="footer-head">Contact Info</div>
                     <div>
@@ -207,24 +221,24 @@
             <!-- *************************************
             *      finding maxium number section     *
             ****************************************** -->
-            <div class="js-section">
-                <div class="js-container">
+            <div class="js-section change-text">
+                <div class="js-container change-bg">
 
                     <!-- card header -->
-                    <h1 class="section-header">Find Max Number</h1>
+                    <h1 class="section-header change-text">Find Max Number</h1>
 
                     <div>
                         <form class="form-container" id="max-form" name="max-form">
                             <div class="form-content">
-                                <label for="number1" class="form-label">First Number<span class="require">*</span></label>
+                                <label for="number1" class="form-label change-text">First Number<span class="require">*</span></label>
                                 <input type="number"  placeholder="Enter First Number" id="number1" class="form-input"/>
                             </div>
                             <div class="form-content">
-                                <label for="number2" class="form-label">Second Number<span class="require">*</span></label>
+                                <label for="number2" class="form-label change-text">Second Number<span class="require">*</span></label>
                                 <input type="number"  placeholder="Enter Second Number" id="number2" class="form-input"/>
                             </div>
                             <div class="form-content">
-                                <button type="submit" class="submit-button">Find maximum</button>
+                                <button type="submit" class="submit-button change-text change-bg change-border">Find maximum</button>
                             </div>
                         </form>
                         <div id="max-output" class="output" ></div>
@@ -236,20 +250,20 @@
             <!-- *************************************
             *            Reversing the String        *
             ****************************************** -->
-            <div class="js-section">
-                <div class="js-container">
+            <div class="js-section change-text">
+                <div class="js-container change-bg">
 
                     <!-- card header -->
-                    <h1 class="section-header">Reverse String</h1>
+                    <h1 class="section-header change-text">Reverse String</h1>
                     <div>
                         <form id="reverse-word-form" name="reverse-word-form" class="form-container">
                             <div class="form-content">
-                                <label for="input-string" class="form-label">Enter String<span class="require">*</span></label>
+                                <label for="input-string" class="form-label change-text">Enter String<span class="require">*</span></label>
                                 <input type="text"  placeholder="Enter String" id="input-string" class="form-input"/>
                             </div>
     
                             <div class="form-content">
-                                <button type="submit" class="submit-button">Reverse</button>
+                                <button type="submit" class="submit-button change-text change-bg change-border">Reverse</button>
                             </div>
                         </form>
                         <div id="reverse-output" class="word-output"></div>
@@ -261,20 +275,20 @@
             <!-- *************************************
             *          finding Longest Word          *
             ****************************************** -->
-            <div class="js-section">
-                <div class="js-container">
+            <div class="js-section change-text">
+                <div class="js-container change-bg">
 
                     <!-- card header -->
-                    <h1 class="section-header">Find Longest Word</h1>
+                    <h1 class="section-header change-text">Find Longest Word</h1>
                     <div>
                         <form id="longest-word-form" name="longest-word-form" class="form-container">
                             <div class="form-content">
-                                <label for="words-array" class="form-label">Enter Words<span class="require">*</span></label>
+                                <label for="words-array" class="form-label change-text">Enter Words<span class="require">*</span></label>
                                 <input type="text"  placeholder="Enter Comma Seperated Words" id="words-array" class="form-input"/>
                             </div>
     
                             <div class="form-content">
-                                <button type="submit" class="submit-button">Find Longest</button>
+                                <button type="submit" class="submit-button change-text change-bg change-border">Find Longest</button>
                             </div>
                         </form>
                         <div id="longest-word-output" class="word-output"></div>
@@ -286,24 +300,24 @@
             <!-- *************************************
             *              Create Resume             *
             ****************************************** -->
-            <div class="js-section add-margin-bottom">
-                <div class="js-container">
+            <div class="js-section change-text add-margin-bottom">
+                <div class="js-container change-bg">
 
                     <!-- card header -->
-                    <h1 class="section-header">Resume Maker</h1>
+                    <h1 class="section-header change-text">Resume Maker</h1>
                     <div>
                         <form id="cookie-form" name="cookie-form" class="form-container">
                             <div class="form-content">
-                                <label for="user-name" class="form-label">Enter name<span class="require">*</span></label>
+                                <label for="user-name" class="form-label change-text">Enter name<span class="require">*</span></label>
                                 <input type="text"  placeholder="Enter Your Name" id="user-name" class="form-input"/>
                             </div>
                             <div class="form-content">
-                                <label for="user-mobile-number" class="form-label">Enter Mobile Number<span class="require">*</span></label>
+                                <label for="user-mobile-number" class="form-label change-text">Enter Mobile Number<span class="require">*</span></label>
                                 <input type="text"  placeholder="Enter Mobile Number" id="user-mobile-number" class="form-input" maxlength="10"/>
                             </div>
     
                             <div class="form-content">
-                                <button type="submit" class="submit-button">Create Resume</button>
+                                <button type="submit" class="submit-button change-text change-bg change-border">Create Resume</button>
                             </div>
                         </form>
                         <div id="resume-create-output" class="output"></div>

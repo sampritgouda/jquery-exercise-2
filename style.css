@@ -79,6 +79,9 @@ body{
     border-left: 4px solid #228B22;
 }
 
+#reference-header{
+    margin-bottom: 30px;
+}
 /*****************************************
 *              main content              *
 ******************************************/
@@ -517,5 +520,3 @@ skills section */
         width: 60%;
     }
 }
-
-
