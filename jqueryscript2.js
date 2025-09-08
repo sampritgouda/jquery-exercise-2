@@ -19,9 +19,14 @@ $(document).ready(()=>{
    ****************************************/
     $("#mypage-footer").on("mouseenter", ()=> {
     $(".mypage-footer-content").stop(true, true).slideDown(10000, ()=> {
-      alert("Animation Complete!")
+       $("#card-alert").fadeIn(200); 
     })
   })
+
+  //after clicking on ok hide alert card
+  $("#card-ok").on("click", () => {
+  $("#card-alert").fadeOut(200);
+  });
 
    /****************************************
    * adding slide up animation to footer   *
