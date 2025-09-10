@@ -4,7 +4,7 @@ $(document).ready(()=>{
 
     //changing the background color for all sections
     $(".section-bg").addClass("highlight-bg")
-
+c
     //changing the border color #FF1A00 and adding borders to some sections
     $(".section-border").addClass("highlight-border")
     

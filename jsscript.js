@@ -61,7 +61,6 @@ function find_maximum_number_callback(event) {
   *                    for reversing string                  *
   ************************************************************/
 
-
 function reverse_string_callback(event){
 
     // prevent autosubmission loading
